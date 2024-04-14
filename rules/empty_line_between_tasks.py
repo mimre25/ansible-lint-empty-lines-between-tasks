@@ -1,6 +1,11 @@
 """ansible-lint rule to detect missing empty lines between tasks."""
 
-from typing import Self
+from __future__ import annotations
+
+try:
+    from typing import Self
+except ImportError:
+    from typing_extensions import Self
 
 from ansiblelint.errors import MatchError
 from ansiblelint.file_utils import Lintable

@@ -1,3 +1,4 @@
+ansible-lint
 black
 bump2version
 flake8

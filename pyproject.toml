@@ -10,13 +10,13 @@ authors = [
 ]
 description = "Ansible-lint rule to check for empty lines between tasks"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only"
 ]
-dependencies = ["ansible-lint"]
+dependencies = ["ansible-lint", "typing-extensions"]
 
 [project.urls]
 "Source" = "https://github.com/mimre25/ansible-lint-empty-lines-between-tasks"
@@ -32,7 +32,7 @@ package-dir = {"ansiblelint.rules.custom.ansible_lint_rules" = "rules"}
 ##### ruff #####
 [tool.ruff.lint]
 select = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ",  "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI",  "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
-ignore = ["D203", "D213", "G004", "PLC1901", "S101", "A003", "D102", "ARG002", "D104", "D100", "PLR2004", "RUF012"]
+ignore = ["D203", "D213", "G004", "PLC1901", "S101", "A003", "D102", "ARG002", "D104", "D100", "PLR2004", "RUF012", "TCH002"]
 
 fixable = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ",  "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI",  "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
 unfixable = []
